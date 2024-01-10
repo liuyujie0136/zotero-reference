@@ -1,5 +1,20 @@
 # Zotero Reference
 
+- Forked from `MuiseDestiny/zotero-reference`
+- Based on release v0.5.7 (Apr 26, 2023) for Zotero 6
+- **For self use only**
+
+## Updates
+All updates have been tested in Zotero 6 (v6.0.30), on Windows 10 Professional Education version 2009
+
+### 2023.10.12, v0.5.7.1
+- Add function `showText(options){this.addDescription(options.text);return this;}`, change `createLine()` to `showText()` when displaying the reference content, to remove the icon indicating the processing progress (which is useless here) and make the text more clear
+- Change `color` from `rgba(0, 0, 0, 0.4)` to `rgba(0, 0, 0, 1)`, to make the text in the pop-up window more clear
+- Change `closeTime` to `5e3`, to make the pop-up window display for longer time
+
+
+## Original README
+
 ![Reference](addon/chrome/content/icons/favicon.png)
 
 [![Using Zotero Plugin Template](https://img.shields.io/badge/Using-Zotero%20Plugin%20Template-blue?style=flat-round&logo=github)](https://github.com/windingwind/zotero-plugin-template)

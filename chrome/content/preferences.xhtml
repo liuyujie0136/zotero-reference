@@ -1,0 +1,128 @@
+<vbox id="zotero-prefpane-zoteroreference" onload="Zotero.ZoteroReference.hooks.onPrefsEvent('load', {window})">
+  <groupbox>
+    <caption label="&zotero.zoteroreference.caption.refresh;" />
+    <checkbox id="zoteroreference-auto-refresh" label="&zotero.zoteroreference.autoRefresh;"
+      preference="extensions.zotero.zoteroreference.autoRefresh" />
+    <html:div style="
+        display: flex;
+        margin-top: .5em;
+        flex-direction: row;
+        align-items: left;
+        width: 80%;
+      ">
+      <html:input style="
+          width: 100%;
+          margin: auto .5em;
+        " type="text" id="zoteroreference-not-auto-refresh-item-types"
+        preference="extensions.zotero.zoteroreference.notAutoRefreshItemTypes">
+      </html:input>
+    </html:div>
+  </groupbox>
+  <groupbox>
+    <caption label="&zotero.zoteroreference.caption.source;" />
+    <html:div style="
+      display: flex;
+      flex-direction: row;
+      margin-left: .5em;
+    ">
+      <html:span style="margin: auto 0;">&zotero.zoteroreference.prioritySource.start;</html:span>
+      <html:select style="height: 1.5em; margin: auto .5em;" id="zoteroreference-priority-source"
+        preference="extensions.zotero.zoteroreference.prioritySource">
+        <html:option value="PDF">PDF</html:option>
+        <html:option value="API">API</html:option>
+      </html:select>
+      <html:span style="margin: auto 0;">&zotero.zoteroreference.prioritySource.end;</html:span>
+    </html:div>
+    <html:div style="
+      display: flex;
+      flex-direction: row;
+      margin-left: .5em;
+    ">
+      <html:span style="margin: auto 0; margin-right: .5em;">&zotero.zoteroreference.preLoadingPageNum.start;</html:span>
+      <html:input style="width: 2em; margin: auto 0; height: 1em;" type="text" id="zoteroreference-min-pre-load-page-num"
+        preference="extensions.zotero.zoteroreference.preLoadingPageNum">
+      </html:input>
+      <html:span style="margin: auto 0; margin-left: .5em;">&zotero.zoteroreference.preLoadingPageNum.end;</html:span>
+    </html:div>
+  </groupbox>
+  <groupbox>
+    <caption label="&zotero.zoteroreference.caption.tip;" />
+    <hbox>
+      <description>&zotero.zoteroreference.tipBackgroundColor;</description>
+      <html:input style="width: 6em; margin: auto 0; height: 1em;" type="text" id="zoteroreference-tip-background-color"
+        preference="extensions.zotero.zoteroreference.tipBackgroundColor">
+      </html:input>
+      <description>&zotero.zoteroreference.tipTitleColor;</description>
+      <html:input style="width: 6em; margin: auto 0; height: 1em;" type="text" id="zoteroreference-tip-title-color"
+        preference="extensions.zotero.zoteroreference.tipTitleColor">
+      </html:input>
+    </hbox>
+    <html:div style="
+      display: flex;
+      flex-direction: row;
+    ">
+      <checkbox id="zoteroreference-is-show-tip" label="&zotero.zoteroreference.isShowTip.start;"
+        preference="extensions.zotero.zoteroreference.isShowTip" />
+      <html:input style="width: 4em; margin: auto 0; height: 1em;" type="text"
+        id="zoteroreference-remove-tip-after-millisecond"
+        preference="extensions.zotero.zoteroreference.showTipAfterMillisecond">
+      </html:input>
+      <html:span style="margin: auto 0; margin-left: .5em;">&zotero.zoteroreference.isShowTip.end;</html:span>
+    </html:div>
+    <checkbox id="zoteroreference-ctrl-click-translate" label="&zotero.zoteroreference.ctrlClickTranslate;"
+      preference="extensions.zotero.zoteroreference.ctrlClickTranslate" />
+    <hbox>
+      <description>&zotero.zoteroreference.shadeMillisecond.start;</description>
+      <html:input style="width: 4em; margin: auto 0; height: 1em;" type="text" id="zoteroreference-shade-millisecond"
+        preference="extensions.zotero.zoteroreference.shadeMillisecond">
+      </html:input>
+      <html:span style="margin: auto 0; margin-left: .5em;">&zotero.zoteroreference.shadeMillisecond.end;</html:span>
+    </hbox>
+    <hbox>
+      <description>&zotero.zoteroreference.removeTipAfterMillisecond.start;</description>
+      <html:input style="width: 4em; margin: auto 0; height: 1em;" type="text"
+        id="zoteroreference-remove-tip-after-millisecond"
+        preference="extensions.zotero.zoteroreference.removeTipAfterMillisecond">
+      </html:input>
+      <html:span style="margin: auto 0; margin-left: .5em;">&zotero.zoteroreference.removeTipAfterMillisecond.end;
+      </html:span>
+    </hbox>
+  </groupbox>
+  <groupbox>
+    <caption label="&zotero.zoteroreference.caption.related;" />
+    <checkbox id="zoteroreference-loading-related" label="&zotero.zoteroreference.loadingRelated;"
+      preference="extensions.zotero.zoteroreference.loadingRelated" />
+  </groupbox>
+  <groupbox>
+    <caption label="&zotero.zoteroreference.caption.link;" />
+    <hbox>
+      <checkbox id="zoteroreference-click-link" label="&zotero.zoteroreference.clickLink.start;"
+        preference="extensions.zotero.zoteroreference.clickLink" />
+      <html:select style="height: 1.5em;" id="zoteroreference-click-link-cmd"
+        preference="extensions.zotero.zoteroreference.clickLink.cmd">
+        <html:option value="splitHorizontally">&zotero.zoteroreference.clickLink.splitHorizontally;</html:option>
+        <html:option value="splitVertically">&zotero.zoteroreference.clickLink.splitVertically;</html:option>
+      </html:select>
+      <html:span style="margin: auto 0; margin-left: .5em">&zotero.zoteroreference.clickLink.end;</html:span>
+    </hbox>
+    <checkbox id="zoteroreference-hover-links" label="&zotero.zoteroreference.hoverLink;"
+      preference="extensions.zotero.zoteroreference.hoverLink" />
+  </groupbox>
+  <groupbox>
+    <caption label="&zotero.zoteroreference.caption.save;" />
+    <checkbox id="zoteroreference-save-pdf-references" label="&zotero.zoteroreference.savePDFReferences;"
+      preference="extensions.zotero.zoteroreference.savePDFReferences" />
+    <checkbox id="zoteroreference-save-api-references" label="&zotero.zoteroreference.saveAPIReferences;"
+      preference="extensions.zotero.zoteroreference.saveAPIReferences" />
+  </groupbox>
+  <groupbox>
+    <caption label="&zotero.zoteroreference.caption.match;" />
+    <hbox>
+      <description>&zotero.zoteroreference.notInLibarayOpacity.start;</description>
+      <html:input style="width: 4em; margin: auto 0; height: 1em;" type="text" id="zoteroreference-not-in-library-opacity"
+        preference="extensions.zotero.zoteroreference.notInLibarayOpacity">
+      </html:input>
+      <html:span style="margin: auto 0; margin-left: .5em;">&zotero.zoteroreference.notInLibarayOpacity.end;</html:span>
+    </hbox>
+  </groupbox>
+</vbox>

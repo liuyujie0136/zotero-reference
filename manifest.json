@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Zotero Reference",
+  "version": "0.5.7",
+  "description": "侧边栏展示阅读文献的所有参考文献，多源浮窗，推荐关联...",
+  "author": "Polygon",
+  "icons": {
+    "48": "chrome/content/icons/favicon@0.5x.png",
+    "96": "chrome/content/icons/favicon.png"
+  },
+  "applications": {
+    "zotero": {
+      "id": "zoteroreference@polygon.org",
+      "update_url": "https://raw.githubusercontent.com/muisedestiny/zotero-reference/bootstrap/update.json",
+      "strict_min_version": "6.999",
+      "strict_max_version": "7.0.*"
+    }
+  }
+}

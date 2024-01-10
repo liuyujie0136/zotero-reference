@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<RDF:RDF
+    xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+    xmlns:NC="http://home.netscape.com/NC-rdf#"
+    xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <RDF:Description
+        RDF:about="urn:mozilla:install-manifest"
+        em:id="zoteroreference@polygon.org"
+        em:name="Zotero Reference"
+        em:version="0.5.7.1"
+        em:type="2"
+        em:creator="Polygon"
+        em:description="侧边栏展示阅读文献的所有参考文献，多源浮窗，推荐关联..."
+        em:homepageURL="https://github.com/muisedestiny/zotero-reference#readme"
+        em:iconURL="chrome://zoteroreference/content/icons/favicon.png"
+        em:optionsURL="chrome://zoteroreference/content/preferences.xul"
+        em:updateURL="https://raw.githubusercontent.com/muisedestiny/zotero-reference/bootstrap/update.json"
+        em:multiprocessCompatible="true"
+        em:bootstrap="true">
+        <em:targetApplication>
+            <Description>
+                <em:id>zotero@chnm.gmu.edu</em:id>
+                <em:minVersion>5.0</em:minVersion>
+                <em:maxVersion>*</em:maxVersion>
+            </Description>
+        </em:targetApplication>
+        <em:targetApplication>
+            <Description>
+                <em:id>juris-m@juris-m.github.io</em:id>
+                <em:minVersion>5.0</em:minVersion>
+                <em:maxVersion>*</em:maxVersion>
+            </Description>
+        </em:targetApplication>
+  </RDF:Description>
+</RDF:RDF>
